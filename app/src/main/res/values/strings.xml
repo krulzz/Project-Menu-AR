@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MenuAR</string>
+    <string name="HiApip">Hi, Apip!</string>
+    <string name="lapar">Udah laper belum?</string>
+    <string name="menu">Menu</string>
+    <string name="tab_sate">Sate</string>
+    <string name="tab_tongseng">Tongseng</string>
+    <string name="tab_gulai">Gulai</string>
+    <string name="tab_minuman">Minuman</string>
+</resources>
