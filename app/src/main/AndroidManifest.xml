@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuAR">
         <activity
+            android:name=".FoodDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home_Activity"
             android:exported="false" />
     </application>

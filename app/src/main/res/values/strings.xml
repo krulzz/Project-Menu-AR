@@ -7,4 +7,16 @@
     <string name="tab_tongseng">Tongseng</string>
     <string name="tab_gulai">Gulai</string>
     <string name="tab_minuman">Minuman</string>
+    <string name="sate_ayam_daging">Sate Ayam Daging</string>
+    <string name="harga15ribu">Rp. 15.000</string>
+    <string name="harga20ribu">Rp. 20.000</string>
+    <string name="harga25ribu">Rp. 25.000</string>
+    <string name="sate_ayam_campur">Sate Ayam Campur</string>
+    <string name="sate_ayam_taichan">Sate Ayam Taichan</string>
+    <string name="sate_ayam_kulit">Sate Ayam Kulit</string>
+    <string name="sate_maranggi">Sate Maranggi</string>
+    <string name="sate_kikil">Sate kikil</string>
+    <string name="desc_btn_sate_kikil">Buka detail Sate Kikil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

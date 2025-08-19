@@ -85,6 +85,11 @@
         </com.google.android.material.tabs.TabLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:fillViewport="false">
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,28 +118,34 @@
                     <ImageButton
                         android:id="@+id/btnSateDaging"
                         android:layout_width="match_parent"
-                        android:layout_height="140dp"
+                        android:layout_height="100dp"
                         android:scaleType="centerInside"
                         android:background="?attr/selectableItemBackground"
-                        android:src="@drawable/sate_ayam_daging"/>
+                        android:src="@drawable/sate_ayam_daging_2"
+                        android:importantForAccessibility="no"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Sate Ayam Daging"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/sate_ayam_daging"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Rp. 20.000"
+                        android:text="@string/harga20ribu"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -157,30 +168,35 @@
                     <ImageButton
                         android:id="@+id/btnSateCampur"
                         android:layout_width="match_parent"
-                        android:layout_height="140dp"
+                        android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:background="?attr/selectableItemBackground"
                         android:src="@drawable/sate_ayam_campur"
-                        android:contentDescription="@string/desc_sate_campur"
-                        android:tooltipText="@string/desc_sate_campur" />
+                        android:importantForAccessibility="no"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Sate Ayam Campur"
+                        android:text="@string/sate_ayam_campur"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"                        />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Rp. 20.000"
+                        android:text="@string/harga20ribu"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -203,37 +219,199 @@
                     <ImageButton
                         android:id="@+id/btnSateTaichan"
                         android:layout_width="match_parent"
-                        android:layout_height="140dp"
+                        android:layout_height="100dp"
                         android:scaleType="centerCrop"
                         android:background="?attr/selectableItemBackground"
                         android:src="@drawable/sate_ayam_taichan"
-                        android:contentDescription="@string/desc_sate_taichan"
-                        android:tooltipText="@string/desc_sate_taichan" />
+                        android:importantForAccessibility="no"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Sate Ayam Taichan"
+                        android:text="@string/sate_ayam_taichan"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Rp. 20.000"
+                        android:text="@string/harga20ribu"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- ===== CARD 4: Sate Ayam Kulit ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnSateKulit"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/sate_ayam_kulit"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/sate_ayam_kulit"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/harga20ribu"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ===== CARD 5: Sate Maranggi ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnSateMaranggi"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/sate_ayam_maranggi"
+                        android:importantForAccessibility="no"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/sate_maranggi"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/harga25ribu"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ===== CARD 6: Sate Kikil ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnSateKikil"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/sate_kikil"
+                        android:contentDescription="@null"
+                        android:importantForAccessibility="no"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/sate_kikil"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/harga15ribu"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/HelMedium"
+                        android:lineSpacingExtra="5dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
 
         </GridLayout>
 
-        </GridLayout>
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 
