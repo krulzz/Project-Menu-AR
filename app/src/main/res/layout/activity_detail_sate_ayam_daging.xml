@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSateAyamDaging"
+    >
+
+    <ImageView
+        android:layout_width="414dp"
+        android:layout_height="414dp"
+        android:src="@drawable/bg_sate_ayam_daging"
+        android:layout_marginTop="-20dp"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:layout_width="414dp"
+        android:layout_height="199dp"
+        android:src="@drawable/round_rectangle"
+        android:layout_gravity="center"
+        android:layout_marginStart="-416dp"
+        android:contentDescription="@null" />
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="440dp"
+        android:src="@drawable/sate_ayam_daging"
+        android:layout_marginStart="-385dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@null"/>
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="-360dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_back"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sate_ayam_daging"
+        android:fontFamily="@font/HelBold"
+        android:layout_marginTop="415dp"
+        android:layout_marginStart="30dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        />
+    <ImageView
+        android:layout_width="274dp"
+        android:layout_height="19dp"
+        android:background="@drawable/kalori"
+        android:layout_marginTop="465dp"
+        android:layout_marginStart="-240dp"
+        android:contentDescription="@null"/>
+    <ImageView
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:src="@drawable/harga20rb"
+        android:layout_marginStart="-300dp"
+        android:layout_marginTop="540dp"
+        android:contentDescription="@null"/>
+
+    <View
+        android:layout_width="319dp"
+        android:layout_height="1dp"
+        android:background="#ADADAD"
+        android:layout_marginStart="-135dp"
+        android:layout_marginTop="500dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:fontFamily="@font/HelBold"
+        android:textColor="@color/black"
+        android:layout_marginStart="-323dp"
+        android:layout_marginTop="585dp" />
+    <TextView
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/HelMedium"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:justificationMode="inter_word"
+        android:text="@string/deskripsi_sate_daging_ayam"
+        android:layout_marginTop="615dp"
+        android:layout_marginStart="-117dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_scan_ar"
+        android:layout_width="322dp"
+        android:layout_height="53dp"
+        android:background="@drawable/btn_scan_ar"
+        android:layout_marginTop="790dp"
+        android:layout_marginStart="-315dp"
+        tools:ignore="SpeakableTextPresent"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

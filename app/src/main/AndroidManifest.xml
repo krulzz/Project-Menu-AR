@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuAR">
         <activity
+            android:name=".DetailSateAyamDaging"
+            android:exported="false" />
+        <activity
+            android:name=".SateActivity"
+            android:exported="false" />
+        <activity
             android:name=".FoodDetailActivity"
             android:exported="false" />
         <activity

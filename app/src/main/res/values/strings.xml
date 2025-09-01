@@ -17,6 +17,7 @@
     <string name="sate_maranggi">Sate Maranggi</string>
     <string name="sate_kikil">Sate kikil</string>
     <string name="desc_btn_sate_kikil">Buka detail Sate Kikil</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deskripsi_sate_daging_ayam">Sate ayam adalah salah satu hidangan khas Indonesia yang sangat populer, terbuat dari potongan daging ayam yang ditusuk dengan tusukan bambu (tusuk sate) kemudian dibakar di atas bara api. Daging ayam biasanya dipotong kecil-kasih dan direndam dalam bumbu marinade yang terbuat dari campuran kecap manis, bawang putih, ketumbar, garam, dan terkadang sedikit air jeruk nipis untuk memberikan rasa gurih, manis, dan sedikit asam. Setelah dibakar hingga matang dan beraroma harum, sate ayam disajikan dengan bumbu kacang yang kental.</string>
+    <string name="sate_daging_ayam">Sate Daging Ayam</string>
+    <string name="about">Tentang Makanan</string>
 </resources>

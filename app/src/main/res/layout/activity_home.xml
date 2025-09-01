@@ -96,7 +96,7 @@
 
             <!-- Item Category -->
             <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginEnd="16dp">
-                <ImageButton android:layout_width="60dp" android:layout_height="60dp" android:background="@drawable/btn_sate" android:layout_marginLeft="20dp" android:contentDescription="@null" android:importantForAccessibility="no"/>
+                <ImageButton android:layout_width="60dp" android:layout_height="60dp" android:background="@drawable/btn_sate" android:layout_marginLeft="20dp" android:contentDescription="@null" android:importantForAccessibility="no" android:id="@+id/btn_sate_main"/>
                 <TextView android:text="Sate" android:gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="-47dp" android:layout_marginTop="65dp" android:fontFamily="@font/HelMedium" android:textColor="@color/black"/>
 
                 <ImageButton android:layout_width="60dp" android:layout_height="60dp" android:background="@drawable/btn_tongseng" android:layout_marginLeft="50dp" android:contentDescription="@null" android:importantForAccessibility="no"/>

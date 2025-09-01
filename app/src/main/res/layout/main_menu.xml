@@ -107,7 +107,8 @@
                 android:layout_columnWeight="1"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:id="@+id/btn_sate_ayam_daging">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -157,7 +158,8 @@
                 android:layout_columnWeight="1"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:id="@+id/btn_sate_ayam_campur">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -208,7 +210,8 @@
                 android:layout_columnWeight="1"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:id="@+id/btn_sate_ayam_taichan">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -260,7 +263,8 @@
                 android:layout_columnWeight="1"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:id="@+id/btn_sate_ayam_kulit">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -312,7 +316,8 @@
                 android:layout_columnWeight="1"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:id="@+id/btn_sate_ayam_maranggi">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -364,7 +369,8 @@
                 android:layout_columnWeight="1"
                 app:cardCornerRadius="16dp"
                 app:cardUseCompatPadding="true"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:id="@+id/btn_sate_ayam_kikil">
 
                 <LinearLayout
                     android:layout_width="match_parent"
