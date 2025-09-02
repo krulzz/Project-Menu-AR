@@ -17,6 +17,7 @@
             app:tabIndicatorColor="@color/accent"
             app:tabTextColor="@color/gray_500"
             app:tabSelectedTextColor="@color/accent"
+            android:contentDescription="@string/deskripsi_tombol_scan_ar"
             />
     </com.google.android.material.appbar.AppBarLayout>
 

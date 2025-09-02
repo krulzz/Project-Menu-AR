@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuAR">
         <activity
+            android:name=".detail_sate_ayam_taichan"
+            android:exported="false" />
+        <activity
+            android:name=".detail_sate_ayam_campur"
+            android:exported="false" />
+        <activity
             android:name=".DetailSateAyamDaging"
             android:exported="false" />
         <activity
@@ -22,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Home_Activity"
             android:exported="false" />
     </application>
 

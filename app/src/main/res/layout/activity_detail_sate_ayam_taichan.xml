@@ -9,10 +9,11 @@
     >
 
     <ImageView
-        android:layout_width="414dp"
-        android:layout_height="414dp"
-        android:src="@drawable/bg_sate_ayam_daging"
+        android:layout_width="415dp"
+        android:layout_height="415dp"
+        android:src="@drawable/bg_sate_ayam_taichan"
         android:layout_marginTop="-20dp"
+        android:layout_marginStart="-2dp"
         android:contentDescription="@null"/>
 
     <ImageView
@@ -20,14 +21,14 @@
         android:layout_height="199dp"
         android:src="@drawable/round_rectangle"
         android:layout_gravity="center"
-        android:layout_marginStart="-416dp"
+        android:layout_marginStart="-414dp"
         android:layout_marginTop="-25dp"
         android:contentDescription="@null" />
     <ImageView
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:src="@drawable/sate_ayam_daging"
-        android:layout_marginStart="-375dp"
+        android:layout_height="300dp"
+        android:src="@drawable/sate_ayam_taichan"
+        android:layout_marginStart="-378dp"
         android:layout_marginTop="53dp"
         android:contentDescription="@null"/>
     <ImageButton
@@ -43,7 +44,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sate_ayam_daging"
+        android:text="@string/sate_ayam_taichan"
         android:fontFamily="@font/HelBold"
         android:layout_marginTop="310dp"
         android:layout_marginStart="30dp"
@@ -87,7 +88,7 @@
         android:textColor="@color/black"
         android:textSize="12sp"
         android:justificationMode="inter_word"
-        android:text="@string/deskripsi_sate_daging_ayam"
+        android:text="@string/deskripsi_sate_taichan"
         android:layout_marginTop="470dp"
         android:layout_marginStart="-117dp"/>
 

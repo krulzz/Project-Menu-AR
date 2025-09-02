@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="414dp"
         android:layout_height="414dp"
-        android:src="@drawable/bg_sate_ayam_daging"
+        android:src="@drawable/bg_sate_ayam_campur"
         android:layout_marginTop="-20dp"
         android:contentDescription="@null"/>
 
@@ -25,8 +25,8 @@
         android:contentDescription="@null" />
     <ImageView
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:src="@drawable/sate_ayam_daging"
+        android:layout_height="300dp"
+        android:src="@drawable/sate_ayam_campur"
         android:layout_marginStart="-375dp"
         android:layout_marginTop="53dp"
         android:contentDescription="@null"/>
