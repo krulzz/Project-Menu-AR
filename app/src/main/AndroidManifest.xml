@@ -12,6 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuAR">
         <activity
+            android:name=".detail_soto_ayam"
+            android:exported="false" />
+        <activity
+            android:name=".detail_gulai"
+            android:exported="false" />
+        <activity
+            android:name=".detail_tongseng_ayam"
+            android:exported="false" />
+        <activity
+            android:name=".detail_tongseng_sapi"
+            android:exported="false" />
+        <activity
+            android:name=".detail_tongseng_kambing"
+            android:exported="false" />
+        <activity
+            android:name=".detail_soto_balungan"
+            android:exported="false" />
+        <activity
+            android:name=".sate_kikil"
+            android:exported="false" />
+        <activity
+            android:name=".sate_maranggi_sapi"
+            android:exported="false" />
+        <activity
+            android:name=".detail_sate_ayam_kulit"
+            android:exported="false" />
+        <activity
             android:name=".detail_sate_ayam_taichan"
             android:exported="false" />
         <activity

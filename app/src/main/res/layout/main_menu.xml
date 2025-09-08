@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/menu"
-            android:fontFamily="@font/HelBold"
+            android:fontFamily="@font/helbold"
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:textSize="14sp"/>
@@ -117,7 +117,7 @@
                     android:padding="12dp">
 
                     <ImageButton
-                        android:id="@+id/btnSateDaging"
+                        android:id="@+id/btnsatedaging"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:scaleType="centerInside"
@@ -134,7 +134,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
 
                     <TextView
@@ -146,7 +146,7 @@
                         android:textStyle="bold"
                         android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"/>
+                        android:fontFamily="@font/helmed"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -185,7 +185,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"                        />
 
                     <TextView
@@ -197,7 +197,7 @@
                         android:textStyle="bold"
                         android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -237,7 +237,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
 
                     <TextView
@@ -249,7 +249,7 @@
                         android:textStyle="bold"
                         android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
 
@@ -290,7 +290,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
 
                     <TextView
@@ -302,7 +302,7 @@
                         android:textStyle="bold"
                         android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
 
@@ -343,7 +343,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
 
                     <TextView
@@ -355,7 +355,7 @@
                         android:textStyle="bold"
                         android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
 
@@ -397,7 +397,7 @@
                         android:textStyle="bold"
                         android:textSize="14sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
 
                     <TextView
@@ -409,7 +409,7 @@
                         android:textStyle="bold"
                         android:textSize="13sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/HelMedium"
+                        android:fontFamily="@font/helmed"
                         android:lineSpacingExtra="5dp"/>
                 </LinearLayout>
 

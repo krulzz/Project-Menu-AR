@@ -17,8 +17,8 @@
     <style name="TabTextAppearance.Custom" parent="TextAppearance.MaterialComponents.Body2">
         <item name="textAllCaps">false</item>
         <item name="android:textAllCaps">false</item>
-        <item name="fontFamily">@font/HelBold</item>   <!-- ganti sesuai font kamu -->
-        <item name="android:fontFamily">@font/HelBold</item>
+        <item name="fontFamily">@font/helbold</item>   <!-- ganti sesuai font kamu -->
+        <item name="android:fontFamily">@font/helbold</item>
         <item name="android:letterSpacing">0</item>
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
