@@ -25,10 +25,32 @@ class HomeActivity : AppCompatActivity() {
         }
 
         val btnSate = findViewById<ImageButton>(R.id.btn_sate_main)
-        btnSate.setOnClickListener {
-            val intent =
-                Intent(this, SateActivity::class.java)
-            startActivity(intent)
+        val btnTongseng = findViewById<ImageButton>(R.id.btn_tongseng_main)
+        val btnGulai = findViewById<ImageButton>(R.id.btn_gulai_main)
+        val btnMinuman = findViewById<ImageButton>(R.id.btn_minuman_main)
+
+        val clickListener = View.OnClickListener { view ->
+            when (view.id) {
+                R.id.btn_sate_main -> {
+                    startActivity(Intent(this, SateActivity::class.java))
+                }
+                R.id.btn_tongseng_main -> {
+                    startActivity(Intent(this, MenuActivity::class.java))
+                }
+                R.id.btn_gulai_main -> {
+                    startActivity(Intent(this, MenuActivity::class.java))
+                }
+                R.id.btn_minuman_main -> {
+                    startActivity(Intent(this, MenuActivity::class.java))
+                }
+            }
         }
+
+// Apply listener ke semua tombol
+        btnSate.setOnClickListener(clickListener)
+        btnTongseng.setOnClickListener(clickListener)
+        btnGulai.setOnClickListener(clickListener)
+        btnMinuman.setOnClickListener(clickListener)
+
     }
 }

@@ -33,7 +33,7 @@
                 android:text="@string/HiApip"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:fontFamily="@font/HelBold"
+                android:fontFamily="@font/helbold"
                 android:textColor="#000000"/>
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_height="18sp"
                 android:text="@string/lapar"
                 android:textSize="14sp"
-                android:fontFamily="@font/HelMedium"
+                android:fontFamily="@font/helmed"
                 android:textColor="#666666"/>
         </LinearLayout>
 
@@ -64,7 +64,7 @@
         android:drawableStart="@drawable/search_magnifier"
         android:background="@drawable/bg_search"
         android:paddingStart="16sp"
-        android:fontFamily="@font/HelMedium"
+        android:fontFamily="@font/helmed"
         android:textSize="15sp"
         android:layout_marginTop="16sp"
         android:autofillHints="search"
@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:text="Food Category"
         android:textStyle="bold"
-        android:fontFamily="@font/HelBold"
+        android:fontFamily="@font/helbold"
         android:textSize="16sp"
         android:layout_marginTop="24dp"
         android:textColor="@color/black"
@@ -117,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="-47dp"
                     android:layout_marginTop="65dp"
-                    android:fontFamily="@font/HelMedium"
+                    android:fontFamily="@font/helmed"
                     android:textColor="@color/black"/>
 
                 <ImageButton
@@ -126,7 +126,8 @@
                     android:background="@drawable/btn_tongseng"
                     android:layout_marginLeft="50dp"
                     android:contentDescription="@null"
-                    android:importantForAccessibility="no"/>
+                    android:importantForAccessibility="no"
+                    android:id="@+id/btn_tongseng_main"/>
 
                 <TextView
                     android:text="Tongseng"
@@ -135,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="-65dp"
                     android:layout_marginTop="65dp"
-                    android:fontFamily="@font/HelMedium"
+                    android:fontFamily="@font/helmed"
                     android:textColor="@color/black"/>
 
                 <ImageButton
@@ -144,7 +145,8 @@
                     android:background="@drawable/btn_gulai"
                     android:layout_marginLeft="30dp"
                     android:contentDescription="@null"
-                    android:importantForAccessibility="no"/>
+                    android:importantForAccessibility="no"
+                    android:id="@+id/btn_gulai_main"/>
 
                 <TextView
                     android:text="Gulai"
@@ -153,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="-46dp"
                     android:layout_marginTop="65dp"
-                    android:fontFamily="@font/HelMedium"
+                    android:fontFamily="@font/helmed"
                     android:textColor="@color/black"/>
 
                 <ImageButton
@@ -162,7 +164,8 @@
                     android:background="@drawable/btn_minuman"
                     android:layout_marginLeft="50dp"
                     android:contentDescription="@null"
-                    android:importantForAccessibility="no"/>
+                    android:importantForAccessibility="no"
+                    android:id="@+id/btn_minuman_main"/>
 
                 <TextView
                     android:text="Minuman"
@@ -171,7 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="-60dp"
                     android:layout_marginTop="65dp"
-                    android:fontFamily="@font/HelMedium"
+                    android:fontFamily="@font/helmed"
                     android:textColor="@color/black"/>
 
             </LinearLayout>
@@ -248,7 +251,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/HelMedium"
+                android:fontFamily="@font/helmed"
                 android:text="Home"
                 android:textColor="#FF4155"
                 android:textSize="12sp"/>
