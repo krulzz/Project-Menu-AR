@@ -13,12 +13,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.page_main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -32,16 +32,16 @@ class HomeActivity : AppCompatActivity() {
         val clickListener = View.OnClickListener { view ->
             when (view.id) {
                 R.id.btn_sate_main -> {
-                    startActivity(Intent(this, SateActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                 }
                 R.id.btn_tongseng_main -> {
-                    startActivity(Intent(this, MenuActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                 }
                 R.id.btn_gulai_main -> {
-                    startActivity(Intent(this, MenuActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                 }
                 R.id.btn_minuman_main -> {
-                    startActivity(Intent(this, MenuActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                 }
             }
         }
@@ -51,6 +51,7 @@ class HomeActivity : AppCompatActivity() {
         btnTongseng.setOnClickListener(clickListener)
         btnGulai.setOnClickListener(clickListener)
         btnMinuman.setOnClickListener(clickListener)
+
 
     }
 }

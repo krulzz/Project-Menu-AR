@@ -12,6 +12,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.card.MaterialCardView
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +25,12 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
-        val btnSateAyamDaging = findViewById<ImageButton>(R.id.btn_sate_ayam_daging)
-        val btnsateayamcampur = findViewById<ImageButton>(R.id.btn_sate_ayam_campur)
-        val btnsateayamtaichan = findViewById<ImageButton>(R.id.btn_sate_ayam_taichan)
-        val btnsateayamkulit = findViewById<ImageButton>(R.id.btn_sate_ayam_kulit)
-        val btnsateayammaranggi = findViewById<ImageButton>(R.id.btn_sate_ayam_maranggi)
-        val btnsateayamkikil = findViewById<ImageButton>(R.id.btn_sate_ayam_kikil)
+        val btnSateAyamDaging = findViewById<MaterialCardView>(R.id.btn_sate_ayam_daging)
+        val btnsateayamcampur = findViewById<MaterialCardView>(R.id.btn_sate_ayam_campur)
+        val btnsateayamtaichan = findViewById<MaterialCardView>(R.id.btn_sate_ayam_taichan)
+        val btnsateayamkulit = findViewById<MaterialCardView>(R.id.btn_sate_ayam_kulit)
+        val btnsateayammaranggi = findViewById<MaterialCardView>(R.id.btn_sate_ayam_maranggi)
+        val btnsateayamkikil = findViewById<MaterialCardView>(R.id.btn_sate_ayam_kikil)
 
         val clickListener = View.OnClickListener { view ->
             when (view.id) {
