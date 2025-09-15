@@ -42,10 +42,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.sceneform.ux)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     dependencies {
         implementation("androidx.viewpager2:viewpager2:1.1.0")
+        implementation("com.google.ar:core:1.41.0")
+        implementation("com.google.ar.sceneform:sceneform-ux:1.17.1")
     }
 }
