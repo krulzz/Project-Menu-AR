@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +16,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MenuAR">
+        android:theme="@style/Theme.MenuAR" >
+        <activity
+            android:name=".kamera_activity"
+            android:exported="false" />
         <activity
             android:name=".air_mineral"
             android:exported="false" />
@@ -22,7 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity2"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -77,6 +86,7 @@
         <activity
             android:name=".DetailSateAyamDagingActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>

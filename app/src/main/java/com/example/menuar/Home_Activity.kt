@@ -4,10 +4,12 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,6 +30,7 @@ class HomeActivity2 : AppCompatActivity() {
         val btnTongseng = findViewById<ImageButton>(R.id.btn_tongseng_main)
         val btnGulai = findViewById<ImageButton>(R.id.btn_gulai_main)
         val btnMinuman = findViewById<ImageButton>(R.id.btn_minuman_main)
+        val btnScan = findViewById<ImageButton>(R.id.btn_scan)
 
         val clickListener = View.OnClickListener { view ->
             when (view.id) {
@@ -51,7 +54,20 @@ class HomeActivity2 : AppCompatActivity() {
         btnTongseng.setOnClickListener(clickListener)
         btnGulai.setOnClickListener(clickListener)
         btnMinuman.setOnClickListener(clickListener)
+        btnScan.setOnClickListener(clickListener)
 
+        btnScan.setOnClickListener {
+            // Buat Intent untuk membuka kamera
+            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
+            // Cek apakah ada aplikasi kamera yang bisa jalanin Intent ini
+            if (cameraIntent.resolveActivity(packageManager) != null) {
+                // Jalanin Intent-nya
+                startActivity(cameraIntent)
+            } else {
+                // Tampilkan pesan jika tidak ada aplikasi kamera
+                Toast.makeText(this, "Tidak ada aplikasi kamera ditemukan", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
