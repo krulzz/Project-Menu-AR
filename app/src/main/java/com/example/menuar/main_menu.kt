@@ -25,6 +25,10 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
+        findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()}
+
+
         val btnSateAyamDaging = findViewById<MaterialCardView>(R.id.btn_sate_ayam_daging)
         val btnsateayamcampur = findViewById<MaterialCardView>(R.id.btn_sate_ayam_campur)
         val btnsateayamtaichan = findViewById<MaterialCardView>(R.id.btn_sate_ayam_taichan)
