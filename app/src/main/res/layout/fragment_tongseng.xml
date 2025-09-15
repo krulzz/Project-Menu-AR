@@ -12,7 +12,7 @@
         android:columnCount="2"
         android:padding="8dp">
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btn_sate_ayam_daging"
+            android:id="@+id/btn_tongseng_ayam"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -27,17 +27,17 @@
                 android:orientation="vertical"
                 android:padding="12dp">
                 <ImageView
-                    android:id="@+id/imgSateDaging"
+                    android:id="@+id/imgTongsengAyam"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/sate_ayam_daging_2"
-                    android:contentDescription="@string/sate_ayam_daging" />
+                    android:src="@drawable/tongseng_ayam"
+                    android:contentDescription="@string/tongseng_ayam" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/sate_ayam_daging"
+                    android:text="@string/tongseng_ayam"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -56,7 +56,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btn_sate_ayam_campur"
+            android:id="@+id/btn_tongseng_kambing"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -71,17 +71,17 @@
                 android:orientation="vertical"
                 android:padding="12dp">
                 <ImageView
-                    android:id="@+id/imgSateCampur"
+                    android:id="@+id/imgTongsengKambing"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/sate_ayam_campur"
-                    android:contentDescription="@string/sate_ayam_campur" />
+                    android:src="@drawable/tongseng_kambing"
+                    android:contentDescription="@string/tongseng_kambing" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/sate_ayam_campur"
+                    android:text="@string/tongseng_kambing"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="14sp"
@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="@string/harga20ribu"
+                    android:text="@string/harga25ribu"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="13sp"
@@ -100,7 +100,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btn_sate_ayam_taichan"
+            android:id="@+id/btn_tongseng_sapi"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -115,105 +115,17 @@
                 android:orientation="vertical"
                 android:padding="12dp">
                 <ImageView
-                    android:id="@+id/imgSateTaichan"
+                    android:id="@+id/imgTongsengSapi"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/sate_ayam_taichan"
-                    android:contentDescription="@string/sate_ayam_taichan" />
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tongseng_sapi"
+                    android:contentDescription="@string/tongseng_sapi" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/sate_ayam_taichan"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/helmed" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/harga20ribu"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="13sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/helmed" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btn_sate_ayam_kulit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="16dp"
-            app:cardUseCompatPadding="true"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/white">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="12dp">
-                <ImageView
-                    android:id="@+id/imgSateKulit"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/sate_ayam_kulit"
-                    android:contentDescription="@string/sate_ayam_kulit" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/sate_ayam_kulit"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/helmed" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/harga20ribu"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="13sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/helmed" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btn_sate_ayam_maranggi"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="16dp"
-            app:cardUseCompatPadding="true"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/white">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="12dp">
-                <ImageView
-                    android:id="@+id/imgSateMaranggi"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/sate_ayam_maranggi"
-                    android:contentDescription="@string/sate_maranggi" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/sate_maranggi"
+                    android:text="@string/tongseng_sapi"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="14sp"

@@ -3,11 +3,15 @@
     <string name="HiApip">Hi, Apip!</string>
     <string name="lapar">Udah laper belum?</string>
     <string name="menu">Menu</string>
+    <string name="search">Cari Makanan atau Minuman</string>
     <string name="tab_sate">Sate</string>
     <string name="tab_tongseng">Tongseng</string>
-    <string name="tab_gulai">Gulai</string>
+    <string name="tab_soto">Soto</string>
     <string name="tab_minuman">Minuman</string>
     <string name="sate_ayam_daging">Sate Ayam Daging</string>
+    <string name="harga5ribu">Rp. 5.000</string>
+    <string name="harga10ribu">Rp. 10.000</string>
+    <string name="harga13ribu">Rp. 13.000</string>
     <string name="harga15ribu">Rp. 15.000</string>
     <string name="harga20ribu">Rp. 20.000</string>
     <string name="harga25ribu">Rp. 25.000</string>
@@ -32,5 +36,13 @@
     <string name="deskripsi_gulai">Gulai adalah hidangan khas Indonesia yang berbahan dasar daging, ayam, ikan, atau sayuran yang dimasak dalam kuah santan berbumbu kaya rempah. Gulai memiliki cita rasa yang gurih, sedikit pedas, dan kaya akan aroma rempah-rempah seperti kunyit, ketumbar, jinten, kayu manis, dan cengkeh. Hidangan ini sering dianggap sebagai kari khas Indonesia karena penggunaan bumbu dan teknik memasaknya yang mirip dengan kari dari India.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="tongseng_ayam">Tongseng Ayam</string>
+    <string name="tongseng_kambing">Tongseng Kambing</string>
+    <string name="tongseng_sapi">Tongseng Sapi</string>
+    <string name="soto_ayam">Soto Ayam</string>
+    <string name="soto_balungan">Soto Balungan</string>
+    <string name="gulai">Gulai</string>
+    <string name="es_teh">Es Teh</string>
+    <string name="es_jeruk">Es Jeruk</string>
+    <string name="air_mineral">Air Mineral</string>
 </resources>

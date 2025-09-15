@@ -1,10 +1,12 @@
 package com.example.menuar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.card.MaterialCardView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,6 +38,35 @@ class MinumanFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_minuman, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val btnEsTeh = view.findViewById<MaterialCardView>(R.id.btn_es_teh)
+        val btnEsJeruk = view.findViewById<MaterialCardView>(R.id.btn_es_jeruk)
+        val btnAirMineral = view.findViewById<MaterialCardView>(R.id.btn_air_mineral)
+
+        val clickListener = View.OnClickListener { v ->
+            val context = requireContext() // Ambil konteks Fragment
+            when (v.id) {
+                R.id.btn_es_teh -> {
+                    startActivity(Intent(context, detail_tongseng_ayam::class.java))
+                }
+
+                R.id.btn_es_jeruk -> {
+                    startActivity(Intent(context, detail_tongseng_kambing::class.java))
+                }
+
+                R.id.btn_air_mineral -> {
+                    startActivity(Intent(context, detail_tongseng_sapi::class.java))
+                }
+            }
+        }
+        btnEsTeh.setOnClickListener(clickListener)
+        btnEsJeruk.setOnClickListener(clickListener)
+        btnAirMineral.setOnClickListener(clickListener)
+
+    }
+
 
     companion object {
         /**

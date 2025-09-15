@@ -1,10 +1,12 @@
 package com.example.menuar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.card.MaterialCardView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,6 +38,35 @@ class GulaiFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_gulai, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val btnSotoAyam = view.findViewById<MaterialCardView>(R.id.btn_soto_ayam)
+        val btnSotoBalungan = view.findViewById<MaterialCardView>(R.id.btn_soto_balungan)
+        val btnGulai = view.findViewById<MaterialCardView>(R.id.btn_gulai)
+
+        val clickListener = View.OnClickListener { v ->
+            val context = requireContext() // Ambil konteks Fragment
+            when (v.id) {
+                R.id.btn_soto_ayam -> {
+                    startActivity(Intent(context, detail_soto_ayam::class.java))
+                }
+
+                R.id.btn_soto_balungan -> {
+                    startActivity(Intent(context, detail_soto_balungan::class.java))
+                }
+
+                R.id.btn_gulai -> {
+                    startActivity(Intent(context, detail_gulai::class.java))
+                }
+            }
+        }
+        btnSotoAyam.setOnClickListener(clickListener)
+        btnSotoBalungan.setOnClickListener(clickListener)
+        btnGulai.setOnClickListener(clickListener)
+
+    }
+
 
     companion object {
         /**

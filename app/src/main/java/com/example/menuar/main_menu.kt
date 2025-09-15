@@ -1,19 +1,12 @@
 package com.example.menuar
 
 import ViewPagerAdapter
-import android.content.Intent
-import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
-import android.view.View
-import android.view.WindowManager
-import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.card.MaterialCardView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import androidx.viewpager2.widget.ViewPager2
@@ -43,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
             tab.text = when (position) {
                 0 -> "Sate"
                 1 -> "Tongseng"
-                2 -> "Gulai"
+                2 -> "Soto"
                 3 -> "Minuman"
                 else -> null
             }
