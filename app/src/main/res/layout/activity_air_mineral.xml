@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailSateAyamDaging">
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/bg_sate_ayam_daging"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/round_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:src="@drawable/round_rectangle"
+        android:scaleType="fitXY"
+        android:contentDescription="@null" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_back"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/gulai_image"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/air_minerall"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/gulai_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gulai_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/helbold"
+        android:text="Air Mineral"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/kalori_info"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_below="@id/gulai_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/kalori_minuman"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/kalori_info"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="#ADADAD" />
+
+    <ImageView
+        android:id="@+id/harga_info"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/divider"
+        android:layout_alignStart="@id/divider"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/limaribu"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/harga_info"
+        android:layout_alignStart="@id/divider"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/helbold"
+        android:text="@string/about_minum"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_title"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/helmed"
+        android:justificationMode="inter_word"
+        android:text="@string/deskripsi_air_mineral"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btn_scan_ar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_scan_ar"
+        android:clickable="true"
+        android:contentDescription="@string/deskripsi_tombol_scan_ar"
+        android:focusable="true"
+        tools:ignore="SpeakableTextPresent" />
+</RelativeLayout>

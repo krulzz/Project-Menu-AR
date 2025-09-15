@@ -11,21 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MenuAR">
-
+        <activity
+            android:name=".air_mineral"
+            android:exported="false" />
+        <activity
+            android:name=".detail_es_jeruk"
+            android:exported="false" />
+        <activity
+            android:name=".detail_es_teh"
+            android:exported="false" />
         <activity
             android:name=".HomeActivity2"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".HomeActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".detail_soto_ayam"
             android:exported="false" />
@@ -71,7 +77,6 @@
         <activity
             android:name=".DetailSateAyamDagingActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>

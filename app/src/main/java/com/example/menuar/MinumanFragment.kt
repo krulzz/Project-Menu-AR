@@ -49,15 +49,15 @@ class MinumanFragment : Fragment() {
             val context = requireContext() // Ambil konteks Fragment
             when (v.id) {
                 R.id.btn_es_teh -> {
-                    startActivity(Intent(context, detail_tongseng_ayam::class.java))
+                    startActivity(Intent(context, detail_es_teh::class.java))
                 }
 
                 R.id.btn_es_jeruk -> {
-                    startActivity(Intent(context, detail_tongseng_kambing::class.java))
+                    startActivity(Intent(context, detail_es_jeruk::class.java))
                 }
 
                 R.id.btn_air_mineral -> {
-                    startActivity(Intent(context, detail_tongseng_sapi::class.java))
+                    startActivity(Intent(context, air_mineral::class.java))
                 }
             }
         }

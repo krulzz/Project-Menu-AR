@@ -35,13 +35,13 @@ class HomeActivity2 : AppCompatActivity() {
                     startActivity(Intent(this, HomeActivity::class.java))
                 }
                 R.id.btn_tongseng_main -> {
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    startActivity(Intent(this, TongsengFragment::class.java))
                 }
                 R.id.btn_gulai_main -> {
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    startActivity(Intent(this, GulaiFragment::class.java))
                 }
                 R.id.btn_minuman_main -> {
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    startActivity(Intent(this, MinumanFragment::class.java))
                 }
             }
         }
