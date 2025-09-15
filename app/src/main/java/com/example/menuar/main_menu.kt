@@ -1,5 +1,6 @@
 package com.example.menuar
 
+import ViewPagerAdapter
 import android.content.Intent
 import android.graphics.Color
 import android.os.Build
@@ -13,6 +14,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.card.MaterialCardView
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
+import androidx.viewpager2.widget.ViewPager2
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,46 +30,23 @@ class HomeActivity : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()}
-
-
-        val btnSateAyamDaging = findViewById<MaterialCardView>(R.id.btn_sate_ayam_daging)
-        val btnsateayamcampur = findViewById<MaterialCardView>(R.id.btn_sate_ayam_campur)
-        val btnsateayamtaichan = findViewById<MaterialCardView>(R.id.btn_sate_ayam_taichan)
-        val btnsateayamkulit = findViewById<MaterialCardView>(R.id.btn_sate_ayam_kulit)
-        val btnsateayammaranggi = findViewById<MaterialCardView>(R.id.btn_sate_ayam_maranggi)
-        val btnsateayamkikil = findViewById<MaterialCardView>(R.id.btn_sate_ayam_kikil)
-
-        val clickListener = View.OnClickListener { view ->
-            when (view.id) {
-                R.id.btn_sate_ayam_daging -> {
-                    startActivity(Intent(this, DetailSateAyamDaging::class.java))
-                }
-                R.id.btn_sate_ayam_campur -> {
-                    startActivity(Intent(this, detail_sate_ayam_campur::class.java))
-                }
-                R.id.btn_sate_ayam_taichan -> {
-                    startActivity(Intent(this, detail_sate_ayam_taichan::class.java))
-                }
-                R.id.btn_sate_ayam_kulit -> {
-                    startActivity(Intent(this, detail_sate_ayam_kulit::class.java))
-                }
-                R.id.btn_sate_ayam_maranggi -> {
-                    startActivity(Intent(this, sate_maranggi_sapi::class.java))
-                }
-                R.id.btn_sate_ayam_kikil -> {
-                    startActivity(Intent(this, sate_kikil::class.java))
-                }
-            }
+            onBackPressedDispatcher.onBackPressed()
         }
 
-// Apply listener ke semua tombol
-        btnSateAyamDaging.setOnClickListener(clickListener)
-        btnsateayamcampur.setOnClickListener(clickListener)
-        btnsateayamtaichan.setOnClickListener(clickListener)
-        btnsateayamkulit.setOnClickListener(clickListener)
-        btnsateayammaranggi.setOnClickListener(clickListener)
-        btnsateayamkikil.setOnClickListener(clickListener)
+        val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+        val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
 
+        val adapter = ViewPagerAdapter(this)
+        viewPager.adapter = adapter
+
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            tab.text = when (position) {
+                0 -> "Sate"
+                1 -> "Tongseng"
+                2 -> "Gulai"
+                3 -> "Minuman"
+                else -> null
+            }
+        }.attach()
     }
 }
