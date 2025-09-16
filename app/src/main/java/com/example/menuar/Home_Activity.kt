@@ -2,7 +2,6 @@ package com.example.menuar
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.MediaStore
 import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
@@ -10,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.ar.sceneform.ux.ArFragment
 
 class HomeActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +45,7 @@ class HomeActivity2 : AppCompatActivity() {
             }
         }
 
-// Apply listener ke semua tombol
+        // Apply listener ke semua tombol
         btnSate.setOnClickListener(clickListener)
         btnTongseng.setOnClickListener(clickListener)
         btnGulai.setOnClickListener(clickListener)
@@ -53,17 +53,9 @@ class HomeActivity2 : AppCompatActivity() {
         btnScan.setOnClickListener(clickListener)
 
         btnScan.setOnClickListener {
-            // Buat Intent untuk membuka kamera
-            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-
-            // Cek apakah ada aplikasi kamera yang bisa jalanin Intent ini
-            if (cameraIntent.resolveActivity(packageManager) != null) {
-                // Jalanin Intent-nya
-                startActivity(cameraIntent)
-            } else {
-                // Tampilkan pesan jika tidak ada aplikasi kamera
-                Toast.makeText(this, "Tidak ada aplikasi kamera ditemukan", Toast.LENGTH_SHORT).show()
-            }
+            // Ganti Intent kamera biasa ke Activity yang akan menampung ArFragment
+            val arIntent = Intent(this, ActivityAR::class.java) // Ganti 'ArActivity' dengan nama Activity-mu
+            startActivity(arIntent)
         }
     }
 }
