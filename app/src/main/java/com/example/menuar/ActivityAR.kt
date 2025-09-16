@@ -22,7 +22,7 @@ class ActivityAR : AppCompatActivity() {
 
         // Muat model 3D dari res/raw
         ModelRenderable.builder()
-            .setSource(this, R.raw.sate_kikil_3d) // Ganti nama file ini dengan nama model 3D lu
+            .setSource(this, R.raw.tongseng_ayam) // Ganti nama file ini dengan nama model 3D lu
             .build()
             .thenAccept { renderable ->
                 modelRenderable = renderable
