@@ -38,6 +38,15 @@
     <string name="deskripsi_es_teh">Es Teh adalah minuman sederhana namun menyegarkan yang terbuat dari teh seduh yang didinginkan dan disajikan dengan es batu. Rasa khasnya yang ringan dan segar membuat es teh cocok diminum kapan saja, terutama di cuaca panas. Minuman ini dapat disajikan tawar untuk rasa teh yang murni, atau ditambahkan gula cair, madu, maupun perasan jeruk nipis untuk memberikan sentuhan manis dan asam yang menyegarkan.</string>
     <string name="deskripsi_es_jeruk">Es Jeruk adalah minuman segar yang dibuat dari perasan jeruk segar yang dicampur dengan air dan gula sesuai selera, lalu disajikan dengan es batu. Rasanya manis, sedikit asam, dan sangat menyegarkan — cocok diminum di siang hari atau setelah makan. Es jeruk kaya akan vitamin C, membantu mengembalikan energi dan membuat tubuh terasa segar kembali.</string>
     <string name="deskripsi_air_mineral">Air Mineral adalah air murni yang mengandung mineral alami seperti kalsium, magnesium, dan kalium yang bermanfaat bagi tubuh. Rasanya netral, segar, dan cocok diminum kapan saja untuk menjaga hidrasi tubuh. Disajikan dingin atau suhu ruang, air mineral membantu menggantikan cairan yang hilang dan mendukung kesehatan secara keseluruhan.</string>
+    <string name="food_category">Food Category</string>
+    <string name="sate">Sate</string>
+    <string name="texttongseng">Tongseng</string>
+    <string name="textsoto">Soto</string>
+    <string name="textminuman">Minuman</string>
+    <string name="textforyou">For You</string>
+    <string name="texthome">Home</string>
+    <string name="textscan">Scan 3D</string>
+    <string name="textsetting">Setting</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tongseng_ayam">Tongseng Ayam</string>

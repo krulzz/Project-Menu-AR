@@ -17,7 +17,8 @@
         android:alpha="0.08"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null"/>
 
     <!-- Konten scrollable -->
     <androidx.core.widget.NestedScrollView
@@ -93,6 +94,7 @@
                 android:drawableStart="@drawable/search_magnifier"
                 android:background="@drawable/bg_search"
                 android:paddingStart="16dp"
+                android:paddingEnd="0dp"
                 android:fontFamily="@font/helmed"
                 android:textSize="15sp"
                 android:layout_marginTop="16dp"
@@ -104,7 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Food Category"
+                android:text="@string/food_category"
                 android:textStyle="bold"
                 android:fontFamily="@font/helbold"
                 android:textSize="16sp"
@@ -144,7 +146,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Sate"
+                            android:text="@string/sate"
                             android:fontFamily="@font/helmed"
                             android:textColor="@color/black"/>
                     </LinearLayout>
@@ -169,7 +171,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Tongseng"
+                            android:text="@string/texttongseng"
                             android:fontFamily="@font/helmed"
                             android:textColor="@color/black"/>
                     </LinearLayout>
@@ -194,7 +196,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Soto"
+                            android:text="@string/textsoto"
                             android:fontFamily="@font/helmed"
                             android:textColor="@color/black"/>
                     </LinearLayout>
@@ -219,7 +221,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Minuman"
+                            android:text="@string/textminuman"
                             android:fontFamily="@font/helmed"
                             android:textColor="@color/black"/>
                     </LinearLayout>
@@ -232,7 +234,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="For You"
+                android:text="@string/textforyou"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:layout_marginTop="24dp"
@@ -294,7 +296,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingHorizontal="8dp">
+        android:paddingHorizontal="8dp"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -305,12 +308,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/bottom_nav_home"/>
+                android:src="@drawable/bottom_nav_home"
+                android:contentDescription="@null"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helmed"
-                android:text="Home"
+                android:text="@string/texthome"
                 android:textColor="#FF4155"
                 android:textSize="12sp"/>
         </LinearLayout>
@@ -325,11 +329,12 @@
                 android:id="@+id/btn_scan"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@drawable/btn_scan"/>
+                android:background="@drawable/btn_scan"
+                android:contentDescription="@null"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SCAN 3D"
+                android:text="@string/textscan"
                 android:textColor="#FF4155"
                 android:textSize="12sp"/>
         </LinearLayout>
@@ -343,11 +348,12 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/btn_setting"/>
+                android:src="@drawable/btn_setting"
+                android:contentDescription="@null"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Setting"
+                android:text="@string/textsetting"
                 android:textSize="12sp"/>
         </LinearLayout>
     </LinearLayout>

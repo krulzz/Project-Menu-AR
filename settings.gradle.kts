@@ -16,8 +16,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs("unityLibrary/libs") // Path relatif dari root proyek
+        }
     }
 }
 
 rootProject.name = "MenuAR"
 include(":app")
+include(":unityLibrary")
+include(":launcher")
