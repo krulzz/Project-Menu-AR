@@ -7,14 +7,21 @@ android {
     namespace = "com.example.menuar"
     compileSdk = 36
 
+    buildFeatures {
+        viewBinding; true}
+
         defaultConfig {
             applicationId = "com.example.menuar"
-            minSdk = 26
+            minSdk = 29
             targetSdk = 36
             versionCode = 1
             versionName = "1.0"
 
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+            ndk {
+                abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64"))
+            }
         }
 
         buildTypes {
@@ -33,7 +40,7 @@ android {
         kotlinOptions {
             jvmTarget = "11"
         }
-    ndkVersion = "29.0.14033849 rc4"
+    ndkVersion = "23.1.7779620"
 
 }
 
